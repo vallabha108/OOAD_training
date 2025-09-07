@@ -1,6 +1,7 @@
-package com.example;
+package com.application;
 
-import com.example.components.Car;
+import com.application.components.Car;
+import com.application.components.bank.BankAccount;
 
 /**
  * Main application class for our Java OOAD project.
@@ -13,5 +14,10 @@ public class App {
         System.out.println("My car name is " + myCar.getName());
         myCar.setName("Toyota Corolla");
         System.out.println("My car name is " + myCar.getName());        
+        BankAccount myCitiBank = new BankAccount(10000);
+        System.out.println("My account balance is " + myCitiBank.getBalance());
+        myCitiBank.withdraw(500);
+        System.out.println("My account balance is " + myCitiBank.getBalance());
+        myCitiBank.withdraw(10000);
     }
 }

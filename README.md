@@ -22,18 +22,18 @@ mvn clean compile
 ```bash
 mvn exec:java
 ```
-This uses the `exec-maven-plugin` and runs the main class `com.example.App`.
+This uses the `exec-maven-plugin` and runs the main class `com.application.App`.
 
 ## Run without Maven (Vanilla Java)
 From the project root:
 
 ```bash
 javac src/main/java/com/example/App.java
-java -cp src/main/java com.example.App
+java -cp src/main/java com.application.App
 ```
 Notes:
 - The classpath (`-cp`) root is `src/main/java`, which is the root of the `com/example` package tree.
-- Do not pass the `.class` file to `java`; use the fully-qualified class name `com.example.App`.
+- Do not pass the `.class` file to `java`; use the fully-qualified class name `com.application.App`.
 
 ## Test
 ```bash

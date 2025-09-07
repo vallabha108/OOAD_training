@@ -1,4 +1,4 @@
-package com.example.components;
+package com.application.components;
 
 public class Car {
     private String name;
